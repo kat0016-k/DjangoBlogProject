@@ -1,0 +1,128 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <title>Blog: Django</title>
+  </head>
+  <body>
+
+    <div class="jumbotron jumbtron-fluid">
+      <div class="container">
+        <h1>My BLOG</h1>
+        <h6>My perfect blog</h6>
+      </div>
+    </div>
+
+    <br>
+    <div class="container">
+      <a href="{% url 'articles:index' %}" class="btn btn-link">Home</a>
+      <a href="admin/" class="btn btn-link">Admin</a>
+        <br>
+      <br>
+    </div>
+    <br>
+    <!-- let Bootstrap automatically handle the layout -->
+    <div class="container-fluid">
+
+      <!-- ROW 1-->
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" onclick="location.href='cat.html'" src="{% static 'images/cat.jpg' %}" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Cats</h4>
+              <a href="cat" class="btn btn-primary">Continue</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" onclick="location.href='cake.html'" src="{% static 'images/cake.jpg' %}" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Cakes</h4>
+              <a href="cake" class="btn btn-primary">Continue</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" onclick="location.href='socialising.html'" src="{% static 'images/socialising.jpg' %}" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Socialising</h4>
+              <a href="socialising" class="btn btn-primary">Continue</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+
+      <!--  ROW 2 -->
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" onclick="location.href='computer.html'" src="{% static 'images/computer.jpg' %}" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Computer</h4>
+              <a href="computer" class="btn btn-primary">Continue</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" onclick="location.href='water.html'" src="{% static 'images/water.jpg' %}" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Water</h4>
+              <a href="water" class="btn btn-primary">Continue</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width:100%">
+            <img class="card-img-top" onclick="location.href='weeds.html'" src="{% static 'images/weeds.jpg' %}" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Weeds In the water</h4>
+              <a href="weeds" class="btn btn-primary">Continue</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <br>
+    </div>
+
+
+      <!--Footer -->
+      <div class="container-fluid" style="background-color:rgb(10,10,10); margin-bottom:0rem">
+        <br>
+        <div class="container">
+          <h1 style="color: grey">Blogging</h1>
+          <p style="color: grey">My perfect blog</p>
+          <blockquote class="blockquote">
+            <p style="color: grey">For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+            <footer class="blockquote-footer">From WWF's website</footer>
+          </blockquote>
+        </div>
+        <br>
+      </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

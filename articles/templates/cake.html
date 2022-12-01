@@ -1,0 +1,80 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <title>Blog:Django</title>
+  </head>
+  <body>
+
+    <div class="jumbotron jumbtron-fluid">
+      <div class="container">
+        <h1>My BLOG </h1>
+        <h6>My perfect block
+  </h6>
+      </div>
+    </div>
+
+
+    <!-- let Bootstrap automatically handle the layout -->
+
+    <div class="container">
+      <a href="{% url 'articles:index' %}" class="btn btn-link">Home</a>
+      <a href="admin/" class="btn btn-link">Admin</a>
+    <br>
+      <br>
+    </div>
+
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col">
+          <div class="container">
+            <div class="card img-fluid" style="width:100%">
+              <img class="card-img-top" src="{% static 'images/cake.jpg' %}" alt="Card image" style="width:100%">
+            </div>
+            <br>
+
+          </div>
+        </div>
+        <div class="col">
+          <h2>Cake</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed id semper risus in. Tellus orci ac auctor augue mauris. Morbi tristique senectus et netus et malesuada fames. Pharetra magna ac placerat vestibulum. Nulla facilisi etiam dignissim diam quis. Cursus eget nunc scelerisque viverra mauris in. Aliquam ut porttitor leo a diam sollicitudin tempor id. Lobortis feugiat vivamus at augue eget. Vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus. A cras semper auctor neque vitae tempus quam pellentesque nec. In nulla posuere sollicitudin aliquam ultrices sagittis orci a.
+
+          Tellus rutrum tellus pellentesque eu. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus. Mattis rhoncus urna neque viverra justo nec ultrices. Feugiat nibh sed pulvinar proin gravida hendrerit. Imperdiet massa tincidunt nunc pulvinar sapien et. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Velit euismod in pellentesque massa placerat duis ultricies. Porttitor leo a diam sollicitudin tempor id eu nisl nunc. Nam at lectus urna duis convallis convallis tellus. Ornare arcu dui vivamus arcu felis. Tortor at risus viverra adipiscing at in tellus. Turpis in eu mi bibendum neque egestas congue quisque. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Nunc id cursus metus aliquam eleifend mi in. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Id aliquet risus feugiat in ante metus. Dignissim convallis aenean et tortor at risus viverra. At elementum eu facilisis sed.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <!--Footer -->
+    <div class="container-fluid" style="background-color:rgb(10,10,10); margin-bottom:0rem">
+      <br>
+      <div class="container">
+        <h1 style="color: grey">Blogging</h1>
+        <p style="color: grey">My perfect blog</p>
+        <blockquote class="blockquote">
+          <p style="color: grey">For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+          <footer class="blockquote-footer">From WWF's website</footer>
+        </blockquote>
+      </div>
+      <br>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
